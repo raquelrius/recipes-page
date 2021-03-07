@@ -10,5 +10,5 @@ imagesUrl.forEach(imageUrl => {
   imageContainer.appendChild(image);
   recipe.appendChild(imageContainer);
 
-  document.body.appendChild(recipe);
+  document.querySelector('main').appendChild(recipe);
 })
