@@ -4,17 +4,126 @@
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-snowpack-app" />
+    <meta
+      name="description"
+      content="Web site created using create-snowpack-app"
+    />
     <link rel="stylesheet" type="text/css" href="/index.css" />
     <title>Recipes</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <script type="module" src="/dist/index.js"></script>
-      <header></header>
-      <main>
-          <h1>Japanese recipes</h1>
-      </main>
-      <footer></footer>
+    <script type="module" src="/dist/recipes.js"></script>
+    <header>
+      <h1>Itadakimasu</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#recipes-container">Recipes</a>
+      </nav>
+      <hr />
+    </header>
+    <main id="home">
+      <div id="recipe-photo-list" class="recipe-photo-list"></div>
+      <div class="recipes">
+        <h2>Recipes</h2>
+        <div id="recipes-container" class="recipes-container">
+          <div class="recipe-card">
+            <h2>Katsu Kare</h2>
+            <div class="recipe-content">
+              <div class="ingredients-block">
+                <h3>Ingredients</h3>
+                <ul>
+                  <li><span>1</span> onion</li>
+                  <li><span>1</span> clove of garlic</li>
+                  <li><span>1</span> clove of ginger</li>
+                  <li><span>300</span> gr chicken legs</li>
+                  <li><span>300</span> gr potatoes</li>
+                  <li><span>1</span> carrot</li>
+                  <li><span>20</span> gr butter</li>
+                  <li><span>4</span> tbsp of flour</li>
+                  <li><span>3</span> tbsp of curry powder</li>
+                  <li><span>200</span> ml vegetable juice</li>
+                  <li><span>600</span> ml water</li>
+                  <li><span>1</span> bouillon cube</li>
+                  <li><span>2</span> tbsp ketchup</li>
+                  <li><span>1</span> tps of instant coffee</li>
+                  <li><span>1</span> tps of sugar</li>
+                  <li><span>1</span> tbsp of Perrins sauce</li>
+                </ul>
+              </div>
+              <div class="steps-block">
+                <p>
+                  First, prepare the vegetables. Cut the onions on slices, peel and cut in small pieces the potatoes and the carrots. Chop the ginger and the garlic.
+                  Put the onions, the ginger and the garlic on a cooking pot and fry it with a little bit of salt. When the onions turn golden brown, add the butter and keep mixing. Then, add the flour and
+                  mix on low heat until smooth. Add the curry powder and mix it again until smooth. Add the vegetable juice and mix it. Do all these steps while heating the pot.
+                  Add the water, the bouillon cube, the ketchup, the Perrins sauce, the sugar and the instant coffee. Let in on low heat for 20 minutes.
+                  Next, prepare the ingredients to put on the curry. Cut the chicken on sized pieces and fry them. Add the potatoes and the carrots and keep frying.
+                  Then, put it in the curry sauce. Simmer until the sauce gets thickened. Side it with white rice.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <h2>Teriyaki Salmon</h2>
+            <div class="recipe-content">
+              <div class="ingredients-block">
+                <h3>Ingredients</h3>
+                <ul>
+                  <li><span>8</span> slices of filet salmon</li>
+                  <li><span>3</span> tbsp of teriyaki sauce</li>
+                  <li><span>3</span> tbsp of hoisin sauce</li>
+                  <li><span>3</span> tbsp of soy sauce</li>
+                  <li><span>1</span> tbsp of white vinegar</li>
+                  <li><span>1</span> tbsp of sesame oil</li>
+                  <li><span>70</span> gr brown sugar</li>
+                  <li><span>3</span> medium garlic cloves</li>
+                  <li><span>2</span> tbsp ginger</li>
+                </ul>
+              </div>
+              <div class="steps-block">
+                <p>
+                  Preheat oven to 200º. Mix all the ingredients in a bowl and stir until the brown sugar is dissolved. The slices of the salmon should be of 5 cm of width.
+                  Place them in the mixing bowl and make sure the sauce is over the salmon. Cover it with a plastic wrap and let it marinate for 20 minutes. 
+                  Once it is marinated, transfer the salmon to a prepared baking sheet (but keep the marinade!). 
+                  Bake the salmon at 200º for 12-16 minutes or until salmon is cooked.
+                  While the salmon is baking, add the remaining marinade to a sauce pan and bring to boil. Then, reduce the heat and simmer, stirring occasionally until it gets slightly thickened (around 3-4 minutes). 
+                  Then remove from heat. Once the salmon is out of the oven, brush it with the teriyaki sauce you heated.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <h2>Teriyaki Salmon</h2>
+            <div class="recipe-content">
+              <div class="ingredients-block">
+                <h3>Ingredients</h3>
+                <ul>
+                  <li><span>8</span> slices of filet salmon</li>
+                  <li><span>3</span> tbsp of teriyaki sauce</li>
+                  <li><span>3</span> tbsp of hoisin sauce</li>
+                  <li><span>3</span> tbsp of soy sauce</li>
+                  <li><span>1</span> tbsp of white vinegar</li>
+                  <li><span>1</span> tbsp of sesame oil</li>
+                  <li><span>70</span> gr brown sugar</li>
+                  <li><span>3</span> medium garlic cloves</li>
+                  <li><span>2</span> tbsp ginger</li>
+                </ul>
+              </div>
+              <div class="steps-block">
+                <p>
+                  Preheat oven to 200º. Mix all the ingredients in a bowl and stir until the brown sugar is dissolved. The slices of the salmon should be of 5 cm of width.
+                  Place them in the mixing bowl and make sure the sauce is over the salmon. Cover it with a plastic wrap and let it marinate for 20 minutes. 
+                  Once it is marinated, transfer the salmon to a prepared baking sheet (but keep the marinade!). 
+                  Bake the salmon at 200º for 12-16 minutes or until salmon is cooked.
+                  While the salmon is baking, add the remaining marinade to a sauce pan and bring to boil. Then, reduce the heat and simmer, stirring occasionally until it gets slightly thickened (around 3-4 minutes). 
+                  Then remove from heat. Once the salmon is out of the oven, brush it with the teriyaki sauce you heated.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
   </body>
 </html>
