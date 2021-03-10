@@ -78,8 +78,8 @@ main {
 
 .recipe-card {
   background-color: rgb(255, 255, 255);
-  width: 70%;
-  height: 30%;
+  width: 80%;
+  height: auto;
   margin: 40px 0 40px;
   box-shadow: 3px 3px 10px 10px rgba(0, 0, 0, 0.4);
   display: flex;
@@ -95,8 +95,12 @@ main {
 
 .ingredients-block {
   width: 30%;
+  margin: 0 10px 10px 20px;
+  border-right: 1px solid black;
 }
 
 .steps-block {
   width: 70%;
+  margin: 0 50px 10px 10px;
+  text-align: justify;
 }
