@@ -9,11 +9,11 @@
       content="Web site created using create-snowpack-app"
     />
     <link rel="stylesheet" type="text/css" href="/index.css" />
+    <link rel="stylesheet" type="text/css" href="dist/recipes.css" />
     <title>Recipes</title>
   </head>
   <body>
-    <script type="module" src="/dist/index.js"></script>
-    <script type="module" src="/dist/recipes.js"></script>
+
     <header>
       <h1>Itadakimasu</h1>
       <nav>
@@ -43,7 +43,7 @@
             <div class="recipe-content">
               <div class="ingredients-block">
                 <!-- <h3>Ingredients</h3> -->
-                <ul>
+                <ul id="katsukare">
                   <li><span>1</span> onion</li>
                   <li><span>1</span> clove of garlic</li>
                   <li><span>1</span> clove of ginger</li>
@@ -80,7 +80,7 @@
             <div class="recipe-content">
               <div class="ingredients-block">
                 <h3>Ingredients</h3>
-                <ul>
+                <ul id="teriyaki">
                   <li><span>8</span> slices of filet salmon</li>
                   <li><span>3</span> tbsp of teriyaki sauce</li>
                   <li><span>3</span> tbsp of hoisin sauce</li>
@@ -109,7 +109,7 @@
             <div class="recipe-content">
               <div class="ingredients-block">
                 <!-- <h3>Ingredients</h3> -->
-                <ul>
+                <ul id="omuraisu">
                   <li><span>160</span> gr chicken</li>
                   <li><span>240</span> gr onion</li>
                   <li><span>100</span> gr mushroom</li>
@@ -136,5 +136,7 @@
       </div>
     </main>
     <footer></footer>
+    <script type="module" src="/dist/index.js"></script>
+    <script type="module" src="/dist/recipes.js"></script>
   </body>
 </html>
