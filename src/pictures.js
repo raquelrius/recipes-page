@@ -22,7 +22,8 @@ imagesUrl.forEach(element => {
   image.src = element.url;
   const wrap = document.createElement('div');
   wrap.classList.add('wrap');
-  const description = document.createElement('p');
+  const description = document.createElement('a');
+  description.href = '#' + element.url.match(/[.\/\w]*\/(\w*).jpg/)[1] + 'path';
   description.innerText = element.name;
   wrap.appendChild(description);
   imageContainer.appendChild(image);

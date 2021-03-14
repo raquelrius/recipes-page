@@ -40,8 +40,10 @@
     justify-content: center;
     align-items: center;
   }
-  .wrap p {
+  .wrap a {
     color: white;
-    font-size: 25px;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   } 
   
