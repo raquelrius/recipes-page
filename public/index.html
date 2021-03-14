@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="/index.css" />
     <link rel="stylesheet" type="text/css" href="dist/recipes.css" />
     <link rel="stylesheet" type="text/css" href="dist/pictures.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Recipes</title>
   </head>
   <body>
@@ -27,23 +28,29 @@
       <div id="recipe-photo-list" class="recipe-photo-list"></div>
       <div class="recipes">
         <h2>Recipes</h2>
-        <select id="servings">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option selected>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-          <option>9</option>
-          <option>10</option>
-        </select>
+        <div class="selector">
+          <label>Select amount of servings</label>
+          <select id="servings" placeholder="Servings">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option selected>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </div>
         <div id="recipes-container" class="recipes-container">
           <div class="recipe-card">
+            <div class="header-title">
+              <h2>Katsu Kare</h2>
+              <div class="heart"></div>
+            </div>
             <div class="recipe-content">
               <div class="ingredients-block">
-                <!-- <h3>Ingredients</h3> -->
                 <ul id="katsukare">
                   <li><span>1</span> onion</li>
                   <li><span>1</span> clove of garlic</li>
@@ -64,12 +71,11 @@
                 </ul>
               </div>
               <div class="steps-block">
-                <h2>Katsu Kare</h2>
                 <p>
                   First, prepare the vegetables. Cut the onions on slices, peel and cut in small pieces the potatoes and the carrots. Chop the ginger and the garlic.
                   Put the onions, the ginger and the garlic on a cooking pot and fry it with a little bit of salt. When the onions turn golden brown, add the butter and keep mixing. Then, add the flour and
-                  mix on low heat until smooth. Add the curry powder and mix it again until smooth. Add the vegetable juice and mix it. Do all these steps while heating the pot.
-                  Add the water, the bouillon cube, the ketchup, the Perrins sauce, the sugar and the instant coffee. Let in on low heat for 20 minutes.
+                  mix on low heat until smooth. Add the curry powder and mix it again until smooth. Add the vegetable juice and mix it. Do all these steps while heating the pot. <br>
+                  Add the water, the bouillon cube, the ketchup, the Perrins sauce, the sugar and the instant coffee. Let it on low heat for 20 minutes.
                   Next, prepare the ingredients to put on the curry. Cut the chicken on sized pieces and fry them. Add the potatoes and the carrots and keep frying.
                   Then, put it in the curry sauce. Simmer until the sauce gets thickened. Side it with white rice.
                 </p>
@@ -77,10 +83,12 @@
             </div>
           </div>
           <div class="recipe-card">
-            <h2>Teriyaki Salmon</h2>
+            <div class="header-title">
+                  <h2>Teriyaki Salmon</h2>
+            <div class="heart"></div>
+            </div>
             <div class="recipe-content">
               <div class="ingredients-block">
-                <h3>Ingredients</h3>
                 <ul id="teriyaki">
                   <li><span>8</span> slices of filet salmon</li>
                   <li><span>3</span> tbsp of teriyaki sauce</li>
@@ -96,7 +104,7 @@
               <div class="steps-block">
                 <p>
                   Preheat oven to 200º. Mix all the ingredients in a bowl and stir until the brown sugar is dissolved. The slices of the salmon should be of 5 cm of width.
-                  Place them in the mixing bowl and make sure the sauce is over the salmon. Cover it with a plastic wrap and let it marinate for 20 minutes. 
+                  Place them in the mixing bowl and make sure the sauce is over the salmon. Cover it with a plastic wrap and let it marinate for 20 minutes. <br> 
                   Once it is marinated, transfer the salmon to a prepared baking sheet (but keep the marinade!). 
                   Bake the salmon at 200º for 12-16 minutes or until salmon is cooked.
                   While the salmon is baking, add the remaining marinade to a sauce pan and bring to boil. Then, reduce the heat and simmer, stirring occasionally until it gets slightly thickened (around 3-4 minutes). 
@@ -106,10 +114,12 @@
             </div>
           </div>
           <div class="recipe-card">
-            <h2>Omuraisu</h2>
+            <div class="header-title">
+               <h2>Omuraisu</h2>
+            <div class="heart"></div>
+            </div>
             <div class="recipe-content">
               <div class="ingredients-block">
-                <!-- <h3>Ingredients</h3> -->
                 <ul id="omuraisu">
                   <li><span>160</span> gr chicken</li>
                   <li><span>240</span> gr onion</li>
@@ -123,8 +133,8 @@
                 <p>
                   First, cook the rice. While it cooks, we can prepare the rest of ingredients. Cut the onion, mushroom and chicken on small pieces.
                   Start frying the chicken on a pan. When it is no longer raw, add the onion and mushroom and fry together. Reduce the heat so the onion can get
-                  to golden color. Once the ingredients are cooked, add the rice and the ketchup above it. Heat everything while mixing properly, 
-                  so the ketchup and the rice get mixed well with the rest. Remove from heat. Now, for each omuraisu beat 2 eggs. You need to do this step for each omuraisu separately.
+                  to golden color. <br> Once the ingredients are cooked, add the rice and the ketchup above it. Heat everything while mixing properly, 
+                  so the ketchup and the rice get mixed well with the rest. Remove from heat. <br> Now, for each omuraisu beat 2 eggs. You need to do this step for each omuraisu separately.
                   Heat a big fry pan with little oil until it gets hot. Then, add the beated eggs and spread them over the pan surface. With two chop sticks, start stiring on circular
                   movements the eggs. When they start to get cooked, add the rice on one side of the beaten eggs and with the help of a spatula (and
                   by tilting the pan if needed) try to cover the rice with the other half of the dough. Finally, to serve the omuraisu to a dish, tilt the pan so that the 

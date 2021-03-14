@@ -45,6 +45,15 @@ const recipesList = [
     {name: 'omuraisu', ingredients: omuraisu}
 ];
 
+$(".heart").on('click touchstart', function(){
+    $(this).toggleClass('is_animating');
+    $(this).toggleClass('liked');
+  });
+  
+  $(".heart").on('animationend', function(){
+    $(this).toggleClass('is_animating');
+  });
+
 const select = document.getElementById("servings");
 
 select.addEventListener('change', event => {
